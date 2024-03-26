@@ -20,9 +20,9 @@ void app_main(void)
     while(1){
         gpio_set_level(GPIO_NUM_2, 1);
         printf("Im on!\n");
-        vTaskDelay(100);
+        vTaskDelay(1000);
         gpio_set_level(GPIO_NUM_2,0);
         printf("Im off!\n");
-        vTaskDelay(100);
+        vTaskDelay(1000);
     }
 }
